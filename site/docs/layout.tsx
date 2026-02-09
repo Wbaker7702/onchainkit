@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import ThemeProvider from './contexts/Theme.tsx';
 
 export default function Layout({ children }: { children: ReactNode }) {
@@ -9,5 +10,10 @@ export default function Layout({ children }: { children: ReactNode }) {
       window.location.reload();
     });
   }
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider>
+      {children}
+      <Analytics />
+    </ThemeProvider>
+  );
 }
