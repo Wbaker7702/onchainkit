@@ -11,6 +11,7 @@
   "dependencies": {
     "@coinbase/onchainkit": "0.37.3",
     "@types/react": "latest",
+    "@vercel/analytics": "^1.4.1",
     "@vercel/edge": "^1.1.1",
     "express": "^4.21.1",
     "motion": "^11.12.0",
