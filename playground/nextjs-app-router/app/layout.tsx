@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@coinbase/onchainkit/styles.css';
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <OnchainProviders>{children}</OnchainProviders>
+        <Analytics />
       </body>
     </html>
   );
