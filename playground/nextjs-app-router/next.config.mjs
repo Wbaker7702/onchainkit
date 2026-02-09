@@ -19,6 +19,9 @@ export default (phase) => {
       config.externals.push('pino-pretty', 'lokijs', 'encoding');
       return config;
     },
+    turbopack: {
+      resolveExtensions: ['.tsx', '.ts', '.jsx', '.js', '.mjs', '.json'],
+    },
   };
   return nextConfig;
 };

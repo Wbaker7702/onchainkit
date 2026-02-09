@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import type { ReactNode } from 'react';
 import ThemeProvider from './contexts/Theme.tsx';
 
 export default function Layout({ children }: { children: ReactNode }) {
