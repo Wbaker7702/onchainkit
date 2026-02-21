@@ -19,9 +19,9 @@
     "react": "18",
     "react-dom": "18",
     "sitemap-generator": "^8.5.1",
-    "tar": "^7.5.7",
+    "tar": "^7.5.8",
     "typescript": "latest",
-    "vite": "^5.4.21",
+    "vite": "^6.4.1",
     "vocs": "1.0.0-alpha.62"
   },
   "devDependencies": {
